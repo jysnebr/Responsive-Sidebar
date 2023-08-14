@@ -1,0 +1,164 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+}
+
+.sidebar {
+    min-height: 100vh;
+}
+
+.sidebar-container {
+    width: 200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.top-section, .middle-section, .bottom-section {
+    width: 80%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-section {
+    margin: 0px;
+}
+
+.top-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-section, .middle-section {
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.items {
+    list-style: none;
+    padding: 0px;
+}
+
+.item {
+    margin-bottom: 30px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.15s;
+}
+
+.item:hover {
+    background-color: rgb(85, 207, 255);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.item img, .top-section img {
+    width: 25px;
+}
+
+.item-text, .top-section p {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.item-text {
+    color: black;
+}
+
+
+.night, .light, .dark {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.night:hover, .light:hover, .dark:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.night {
+    background-color: rgb(109, 109, 109);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark {
+    background-color: rgb(44, 194, 194);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.light {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-night {
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+
+.sidebar-dark {
+    background-color: rgb(44, 194, 194);
+    color: white;
+}
+
+.sidebar-light {
+    background-color: white;
+    color: black;
+}
+
+.item-text-night {
+    color: white;
+}
+
+.item-text-dark {
+    color: white;
+}
+
+.item-text-light {
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+    .item-text {
+        display: none;
+    }
+
+    .top-section p {
+        display: none;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .sidebar-container {
+        width: 70px;
+    }
+    
+}
+
+#item-search {
+    background-color: rgb(85, 207, 255);;
+}
+
